@@ -1,0 +1,15 @@
+html {
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+}
+
+canvas {
+    position: absolute;
+}
+
+#debug_canvas {
+    visibility: hidden;
+}

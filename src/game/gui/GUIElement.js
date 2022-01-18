@@ -1,0 +1,8 @@
+class GUIElement {
+
+    constructor() {
+
+    }
+
+
+}
