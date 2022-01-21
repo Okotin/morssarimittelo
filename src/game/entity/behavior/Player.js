@@ -28,9 +28,11 @@ class Player {
 
         if (kb.isPressed(kb.KEY_Q)) {
             this.morssari.rotation -= tSpd / this.game.updater.tps;
+            this.morssari.rotation %= 2 * Math.PI;
         }
         if (kb.isPressed(kb.KEY_E)) {
             this.morssari.rotation += tSpd / this.game.updater.tps;
+            this.morssari.rotation %= 2 * Math.PI;
         }
 
     }

@@ -22,7 +22,10 @@ class Entity {
         this.posX += this.velX / this.game.updater.tps;
         this.posY += this.velY / this.game.updater.tps;
         this.velY -= this.world.gravity / this.game.updater.tps;
-        
+
+        // [DEBUG]
+        console.log("rotation:", this.rotation);
+
         this.behave();
         this.hitbox.groundCollisions(0, 0);
 

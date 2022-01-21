@@ -1,0 +1,8 @@
+9.5.2021
+
+
+21.1.2022
+Miksi rotaation positiivinen kiertosuunta myötäpäivä?
+Mitä tapahtuu rotaatiolle katsesuuntaa käännettäessä?
+Olisivatko rotaation arvot kivemmin väliltä [-PI,PI]?
+Tarvittaisiinko Hitboxille kulmien sijaintifunktiota?

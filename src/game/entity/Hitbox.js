@@ -1,5 +1,9 @@
 class Hitbox {
-
+    /**
+     * 
+     * @param {Array[Array[number]]} rectangles List of rectangles. A rectangle is defined by its bottom left and top right corners.
+     * @param {Array[Array[number]]} circles List of circles. A circle is defined by its the x and y coordinates of its center, and its radius.
+     */
     constructor(rectangles, circles) {
 
         this.rectangles = rectangles;
@@ -128,8 +132,13 @@ class Hitbox {
                     // k_AB == k_EF results in intersections being NaN or infinities, failing conditions for xInt_AB and xInt_CD above
                     // infinite k_AB, k_BC or k_EF result in intersections being NaN, requiring special handling
 
-                    if (k_EF === Infinity) {
+                    if (Math.abs(k_EF) === Infinity) {
+                        const minY_EF = Math.min(line.y1, line.y2);
+                        const maxY_EF = Math.max(line.y1, line.y2);
+
                         if (minX_AB < line.x1 && line.x1 < maxX_AB) {
+                            // yInt_AB = ???
+
                             console.log("ähää AB INF!");
                         }
                     }
